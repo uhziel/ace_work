@@ -1,18 +1,19 @@
 #include <ace/Log_Msg.h>
 
-void foo (void);
-
-int ACE_TMAIN (int, ACE_TCHAR *[])
-{
-  ACE_TRACE(ACE_TEXT ("main"));
-  ACE_DEBUG ((LM_INFO, ACE_TEXT ("%IHi Mom\n")));
-  foo();
-  ACE_DEBUG ((LM_INFO, ACE_TEXT ("%IGoodnight\n")));
+int ACE_TMAIN (int, ACE_TCHAR *[]) {
+  // test_severity
+  //
+  // Using the ACE Logging Facility
+  // http://www.pearsonhighered.com/samplechapter/0201699710.pdf
+  // Table 3.1. ACE_Log_Msg Logging Severity Levels
+  ACE_DEBUG((LM_TRACE, ACE_TEXT("TRACE hello, world\n")));
+  ACE_DEBUG((LM_DEBUG, ACE_TEXT("DEBUG hello, world\n")));
+  ACE_DEBUG((LM_INFO, ACE_TEXT("INFO hello, world\n")));
+  ACE_DEBUG((LM_NOTICE, ACE_TEXT("NOTICE hello, world\n")));
+  ACE_DEBUG((LM_WARNING, ACE_TEXT("WARNING hello, world\n")));
+  ACE_DEBUG((LM_ERROR, ACE_TEXT("ERROR hello, world\n")));
+  ACE_DEBUG((LM_CRITICAL, ACE_TEXT("CRITICAL hello, world\n")));
+  ACE_DEBUG((LM_ALERT, ACE_TEXT("ALERT hello, world\n")));
+  ACE_DEBUG((LM_EMERGENCY, ACE_TEXT("EMERGENCY hello, world\n")));
   return 0;
-}
-
-void foo (void)
-{
-  ACE_TRACE (ACE_TEXT ("foo"));
-  ACE_DEBUG ((LM_INFO, ACE_TEXT ("%IHowdy Pardner\n")));
 }
