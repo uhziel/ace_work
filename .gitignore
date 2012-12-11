@@ -13,3 +13,5 @@
 *.a
 
 ace_log_severity_level
+ace_log_format
+core
