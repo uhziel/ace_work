@@ -1,2 +1,4 @@
-all:
-	g++ -o ace_log ace_log.cpp $(shell pkg-config --cflags --libs ACE) -DACE_NTRACE=0
+all: ace_log_severity_level
+
+ace_log_severity_level: ace_log_severity_level.cpp
+	g++ -o ace_log_severity_level ace_log_severity_level.cpp $(shell pkg-config --cflags --libs ACE)

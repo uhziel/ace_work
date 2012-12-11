@@ -12,4 +12,4 @@
 *.la
 *.a
 
-ace_log
+ace_log_severity_level
