@@ -1,8 +1,6 @@
 #include <ace/Log_Msg.h>
 
 int ACE_TMAIN (int, ACE_TCHAR *[]) {
-  // test_severity
-  //
   // Using the ACE Logging Facility
   // http://www.pearsonhighered.com/samplechapter/0201699710.pdf
   // Table 3.1. ACE_Log_Msg Logging Severity Levels
