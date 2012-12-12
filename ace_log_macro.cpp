@@ -11,13 +11,13 @@ int ACE_TMAIN (int, ACE_TCHAR *[]) {
   // http://www.pearsonhighered.com/samplechapter/0201699710.pdf
   // Table 3.3. ACE Logging Macros
   //
-  // Common Logging Macro:
+  // Common Logging Macros:
   // ACE_DEBUG ACE_ERROR ACE_TRACE
 
   // Output:
   // ACE_ASSERT: file ace_log_macro.cpp, line 12 assertion failed for '1==0'.Aborting...
   // Aborted (core dumped)
-  //ACE_ASSERT(1==0);
+  ACE_ASSERT(1==0);
 
   ACE_HEX_DUMP((LM_DEBUG, buf, sizeof(buf)/sizeof(buf[0]), ACE_TEXT("ACE_HEX_DUMP")));
 

@@ -5,7 +5,7 @@ int ACE_TMAIN (int, ACE_TCHAR *[]) {
   // http://www.pearsonhighered.com/samplechapter/0201699710.pdf
   // Table 3.1. ACE_Log_Msg Logging Severity Levels
   //
-  // Common Severity Level:
+  // Common Severity Levels:
   // LM_DEBUG LM_ERROR
   ACE_DEBUG((LM_TRACE, ACE_TEXT("TRACE hello, world\n")));
   ACE_DEBUG((LM_DEBUG, ACE_TEXT("DEBUG hello, world\n")));

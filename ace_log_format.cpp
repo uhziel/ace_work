@@ -9,7 +9,7 @@ int ACE_TMAIN (int, ACE_TCHAR *[]) {
   // http://www.pearsonhighered.com/samplechapter/0201699710.pdf
   // Table 3.2. ACE Logging Format Directives
   //
-  // Common Format Directives
+  // Common Format Directives:
   // %I(indent) %s(string) %d(digit) %g(float)
 
   // Output:
