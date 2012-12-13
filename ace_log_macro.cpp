@@ -17,7 +17,7 @@ int ACE_TMAIN (int, ACE_TCHAR *[]) {
   // Output:
   // ACE_ASSERT: file ace_log_macro.cpp, line 12 assertion failed for '1==0'.Aborting...
   // Aborted (core dumped)
-  ACE_ASSERT(1==0);
+  //ACE_ASSERT(1==0);
 
   ACE_HEX_DUMP((LM_DEBUG, buf, sizeof(buf)/sizeof(buf[0]), ACE_TEXT("ACE_HEX_DUMP")));
 
