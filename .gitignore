@@ -18,4 +18,6 @@ ace_log_macro
 ace_log_severity_mask
 ace_log_stderr
 ace_log_syslog
+ace_log_ostream
+ace_log_ostream.log
 core
