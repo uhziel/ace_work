@@ -20,4 +20,6 @@ ace_log_stderr
 ace_log_syslog
 ace_log_ostream
 ace_log_ostream.log
+ace_log_redirect
+ace_log_redirect.log
 core
