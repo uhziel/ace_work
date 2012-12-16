@@ -1,6 +1,8 @@
 #include <ace/Log_Msg.h>
 
 int ACE_TMAIN (int, ACE_TCHAR *[]) {
+  // close all log
+  //ACE_LOG_MSG->priority_mask(0, ACE_Log_Msg::PROCESS);
   ACE_LOG_MSG->priority_mask(LM_DEBUG, ACE_Log_Msg::PROCESS);
   ACE_DEBUG((LM_TRACE, ACE_TEXT("TRACE hello, world\n")));
   ACE_DEBUG((LM_DEBUG, ACE_TEXT("DEBUG hello, world\n")));
